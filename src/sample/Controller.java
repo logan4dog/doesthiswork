@@ -27,7 +27,7 @@ public class Controller  {
 
     CongressHearing h1 =  new CongressHearing("Senate",
       "Nomination-Kahl","Room SD-106, Dirksen Senate Office Building",
-      "Thursday, March 4, 2021. 09:30AM");
+      "Thursday, March 4, 2021. 09:30AM", CongressHearing.Ofdaytime.AM);
       Class<?> c = h1.getClass();
       Method[] allMethods = c.getDeclaredMethods();
     for (Method m : allMethods) {

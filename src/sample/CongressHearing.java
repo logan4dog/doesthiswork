@@ -2,17 +2,23 @@ package sample;
 
 public class CongressHearing {
 
-  private String congressBody;
-  private String hearingTitle;
-  private String hearingLocation;
-  private String hearingDate;
+  private  String congressBody;
+  private  String hearingTitle;
+  private  String hearingLocation;
+  private  String hearingDate;
 
+  public enum Ofdaytime {
+    AM, PM
+  }
+private Ofdaytime hearingdt;
 
-  public CongressHearing(String congressBody, String hearingTitle, String hearingLocation, String hearingDate) {
+  public CongressHearing(String congressBody, String hearingTitle, String hearingLocation,
+                         String hearingDate, Ofdaytime hearingdt) {
     this.congressBody = congressBody;
     this.hearingTitle = hearingTitle;
     this.hearingLocation = hearingLocation;
     this.hearingDate = hearingDate;
+    this.hearingdt = hearingdt;
   }
 
   public String getCongressBody() {
@@ -40,10 +46,10 @@ public class CongressHearing {
   }
 
   public String getHearingDate() {
-    return hearingLocation;
+    return hearingDate;
   }
 
   public void setHearingDate(String hearingLocation) {
-    this.hearingLocation = hearingLocation;
+    this.hearingDate = hearingDate;
   }
 }
